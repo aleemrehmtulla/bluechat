@@ -12,7 +12,7 @@ const GithubButton = () => {
       _active={{ transform: "scale(0.99)", opacity: 0.7 }}
       cursor="pointer"
       transitionDuration="200ms"
-      pos="absolute"
+      pos={{ base: "fixed", md: "absolute" }}
       bottom={4}
       right={4}
       onClick={() => window.open("https://github.com/aleemrehmtulla/bluechat")}

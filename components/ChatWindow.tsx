@@ -13,6 +13,7 @@ const ChatWindow = ({ messages }: ChatWindowProps) => {
   const endOfMessagesRef = useRef<null | HTMLDivElement>(null);
 
   useEffect(() => {
+    if (!messages || messages.length === 0) return;
     if (endOfMessagesRef.current) {
       endOfMessagesRef.current.scrollIntoView({ behavior: "smooth" });
     }
@@ -23,7 +24,7 @@ const ChatWindow = ({ messages }: ChatWindowProps) => {
       align="left"
       spacing={5}
       w={{ base: "full", md: "40%" }}
-      h={{ base: "20rem", md: "32rem" }}
+      h={{ base: "25rem", md: "32rem" }}
       py={{ base: 2, md: 8 }}
       overflowY="scroll"
       transitionDuration="0.2s"

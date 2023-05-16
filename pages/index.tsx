@@ -23,7 +23,14 @@ const BlueChat = () => {
         title="Bluechat"
         description="an easy way to query canadian violence stats & bills"
       />
-      <VStack h="100vh" p={8} pt={{ base: 12, md: 32 }}>
+      <VStack
+        h={{
+          base: "calc(100vh - 2rem)",
+          md: "100vh",
+        }}
+        p={8}
+        pt={{ base: 12, md: 32 }}
+      >
         <ChatHeading />
 
         <ChatWindow messages={messages} />
