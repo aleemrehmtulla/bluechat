@@ -4,7 +4,7 @@ const ChatHeading = () => {
   return (
     <VStack>
       <Heading size="xl" pb={2} color="black">
-        bluechat 💙🇨🇦
+        bluechat 💙
       </Heading>
       <Text
         fontSize={{ base: "sm", md: "md" }}
