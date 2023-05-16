@@ -23,7 +23,7 @@ const ChatWindow = ({ messages }: ChatWindowProps) => {
       align="left"
       spacing={5}
       w={{ base: "full", md: "40%" }}
-      h={{ base: "25rem", md: "32rem" }}
+      h={{ base: "20rem", md: "32rem" }}
       py={{ base: 2, md: 8 }}
       overflowY="scroll"
       transitionDuration="0.2s"
