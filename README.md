@@ -4,7 +4,7 @@ ChatGPT hooked up to 100+ articles on Canadian violence
 
 ### The story in a tweet
 
-https://twitter.com/aleemrehmtulla/status/tweet_id
+https://twitter.com/aleemrehmtulla/status/1658479957293793285
 
 ### Setup
 
