@@ -1,0 +1,23 @@
+datasource db {
+  provider          = "postgresql"
+  url               = env("POOLING_URL")
+  directUrl         = env("DATABASE_URL") // uses a direct connection in production
+  shadowDatabaseUrl = env("DATABASE_URL") // used as a fallback in development
+  extensions        = [vector]
+}
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["jsonProtocol", "postgresqlExtensions"]
+}
+
+model Data {
+  id         String  @id @default(cuid())
+  content    String?
+  title      String?
+  link       String?
+
+  embedding Unsupported("vector(1536)")?
+
+  @@map("data")
+}

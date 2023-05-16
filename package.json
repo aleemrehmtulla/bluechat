@@ -1,0 +1,41 @@
+{
+  "name": "crimeapi",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.6.1",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@prisma/client": "^4.14.0",
+    "@types/node": "20.1.4",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.2",
+    "eventsource-parser": "^1.0.0",
+    "framer-motion": "^10.12.10",
+    "next": "13.4.2",
+    "next-seo": "^6.0.0",
+    "openai": "^3.2.1",
+    "pg": "^8.10.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-linkify": "^1.0.0-alpha",
+    "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.6.6",
+    "@types/react-linkify": "^1.0.1",
+    "prisma": "^4.14.0"
+  }
+}
